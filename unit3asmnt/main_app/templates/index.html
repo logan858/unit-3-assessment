@@ -28,6 +28,13 @@
                 <td><a href="{% url 'delete' widget.id %}">X</a></td>
             </tr>
             {% endfor %}
+            <tfoot>
+                <tr>
+                    <th>Total Quantity</th>
+                    <th>{{ widget_total }}</th>
+                    <th></th>
+                </tr>
+            </tfoot>
         </table>
         {% else %}
         <h3>No Widgets Exist</h3>
